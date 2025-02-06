@@ -2,7 +2,7 @@
 
 *{
     box-sizing: border-box;
-    border: 1px solid orange;
+   
 }
 
 .news-blurb{
@@ -24,7 +24,11 @@
     text-align: center;
     
 }
+.news-blurb figure img {
+    width: 70%;
+    height: 70%;
 
+}
 .news-blurb .text-side{
     float: left;
     margin-top: 30px;
