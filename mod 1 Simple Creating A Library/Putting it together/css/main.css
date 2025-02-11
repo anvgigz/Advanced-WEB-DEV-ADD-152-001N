@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: rgb(233, 10, 10);
+    --background-color: rgba(128, 128, 128, 0.589);
+    --text-color: white;
+    --font-family: Arial, sans-serif;
+    --font-size-large: 1.5em;
+    --font-size-medium: 1.2em;
+    --font-size-small: 1em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+/* The hero image */
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* The image itself */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5; /* Optional: to make the text more readable */
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-image .hero-text button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.hero-image .hero-text button:hover {
+    border: 1px solid var(--secondary-color);
+    background-color: #f0f0f0; /* Optional: change background color on hover */
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Optional: space between the elements */
+    padding: 20px;
+}
+
+.news-blurb {
+    width: 750px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+}
+
+.news-blurb h1 {
+    font-size: var(--font-size-large);
+}
+
+.news-blurb figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 25px;
+    width: 40%;
+    text-align: center;
+}
+
+.news-blurb figure img {
+    width: 70%;
+    height: 70%;
+}
+
+.news-blurb .text-side {
+    float: left;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 300px;
+    width: 45%;
+    text-align: center;
+}
+
+.news-blurb .text-side p {
+    font-size: var(--font-size-medium);
+}
+
+.news-blurb .text-side button {
+    padding: 7px 15px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+}
+
+.card figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+}
+
+.card p {
+    margin: 5px;
+    font-size: var(--font-size-small);
+}
+
+/* use clearfix when you use floats. also use it after your affected data from the floats. */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-gallery .three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-gallery .three img {
+    height: 450px;
+    margin: 10px; /* Optional: add some space around the images */
+}
