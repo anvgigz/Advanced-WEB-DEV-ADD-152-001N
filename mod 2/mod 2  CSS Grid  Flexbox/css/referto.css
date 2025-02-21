@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+:root{
+    --color: lightblue;
+
+}
+
+.parent{
+    
+    display: flex;
+    flex-direction: row; /* row-reverse will completely reverse the order of the boxes 
+    flex-direction: column; */
+    flex-wrap: wrap; /*nowrap shrinks the boxes as the page gets smaller
+    /* flex-flow: row nowrap; >>> this is the same as flex-direction: row;
+    flex-wrap: nowrap;*/
+    /* flex-wrap: wrap-reverse; will do similar to row-reverse and wrap except the last item will go to the top of the page when it gets shrunk. */
+    /* height: 200px */
+    /* overflow: auto; */
+    border: 2px solid lightcoral;
+    justify-content: center; /* this will center the boxes in the parent. */
+    align-items: center; /* this will center the boxes in the parent. */
+}
+/* .parent{
+justify-content: center; >>>or : flex-start;  flex-end; space-between; space-around; space-evenly;
+align-items: center; >>>or : flex-start;  flex-end; stretch; (stretch will fit the flex in the parent) baseline;
+
+} 
+
+2nd video*/
+
+
+
+.item{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.item1{
+    flex-grow: 4; /* this will make the box grow to fill the space. */
+}
+
+.item2{
+    flex-grow: 8; /* this will make the box grow to fill the space. item 2 will be larger than 1 */  
+    flex-basis: 200px; /* this will make the box start at 200px and grow from there. */
+    flex: 0 0 300px; /* this will make the box not grow or shrink and start at 300px. */
+    align-self: center; /* this will make the box align itself to the center of the parent. */
+    align-self: end;
+}
+
+.item3{
+    flex-shrink: 0; /* this will make the box not shrink when the page gets smaller. */
+} /* 3rd video */
+
+.item1{
+ order: 1; /* this will make the box go to the end of the page when it gets shrunk. */
+}
+.item2{
+
+}
+.item3{
+
+}
+.item4{
+    order: -1; /* this will make the box go to the top of the page when it gets shrunk. */
+}
+.item5{
+
+}3rd >  video

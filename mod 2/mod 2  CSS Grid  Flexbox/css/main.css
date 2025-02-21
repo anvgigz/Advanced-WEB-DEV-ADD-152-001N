@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+body{
+	display: flex;
+}
+.parent{
+    flex: 0 0 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.right-side{
+    flex: 0 0 25%;
+}
+
+.card {
+    width: 250px;
+	border: 1px solid black;
+	box-shadow: 4px 4px 4px lightgray;
+	border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.card img {
+	width: 90%;
+}
+
+.card h2{
+	text-align: center;
+	writing-mode: vertical-lr;
+	float: left;
+	margin: 10px 0;
+}
+
+.card figcaption{
+	text-align: center;
+}
+.card p{
+	margin: 5px
+}
+
+/* use clearfix when you use floats. also use it after your affected data from the floats. */
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+    border-color: #333;
+}
