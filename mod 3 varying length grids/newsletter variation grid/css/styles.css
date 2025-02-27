@@ -5,11 +5,11 @@ html{
 
 .container {
   display: grid;
-  grid-template-areas:
+  /* grid-template-areas:
     "header header header header"
     "sidebar content content content"
     "sidebar2 sidebar2 sidebar2 sidebar2"
-    "footer footer footer footer";
+    "footer footer footer footer"; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;;
   gap: 5px;
