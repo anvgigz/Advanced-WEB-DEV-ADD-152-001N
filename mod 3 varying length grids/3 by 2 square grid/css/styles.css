@@ -34,7 +34,7 @@ body{
   grid-row: 1/1;
 }
 /*
-grid-area: 2 /3 /3 /4; // same as grid-row-start,grid-row-end, grid-column-start,  grid-column-end
+grid-area: 2 /3 /3 /4; // same as grid-row-start, grid-column-start, grid-row-end,  grid-column-end
 */
 
 
