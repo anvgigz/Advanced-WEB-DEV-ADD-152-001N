@@ -142,14 +142,47 @@ body, html {
     clear: both;
 }
 
-.img-gallery .three {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.img-gallery h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.img-gallery figure img {
+    display: block;
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 1.25em;
+
+}
+
+.img-gallery figure {
+    margin: 0px 15px 0px auto;margin: 0px 15px 0px auto;
+    /* ^^^ top, right, bottom, left margin: 0px 15px 0px auto;*/
+    display: inline-block;
+    padding: 1.25em;
+    background: brown;
+    border-radius: 15px;
+
+}
+
+.img-gallery figure figcaption {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    background: tan;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.img-gallery section {
+    width: 85%;
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom: 26px;
 }
 
 .img-gallery .three img {
     height: 450px;
-    margin: 10px; /* Optional: add some space around the images */
 }
