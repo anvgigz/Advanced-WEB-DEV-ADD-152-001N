@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <header class="name">
-        <h1>Stephen Krohn</h1>
-    </header>
-    <main class="wrapper">
-        <div class="a">
-            <h2>Security</h2>
-            <a href="https://austingil.com/how-to-build-html-forms-right-security/">
-                <img src="./pictures/security (2).jpg" alt="Security">
-            </a>
-        <p>The article "How to Build HTML Forms Right: Security" provides an overview of security considerations when creating web forms. It discusses applying security principles to the frontend, backend, DNS, and more. As the final part of a series on building web forms, it emphasizes the importance of secure coding practices to protect against vulnerabilities. Previous parts of the series cover semantics, accessibility, styling, and user experience.</p>
-        </div>
-        <div class="b">
-            <h2 class="b">Clean code writing</h2>
-            <a href="https://medium.com/@sergimarquez/8-best-practices-to-write-clean-html-code-1cd407e2a7ec">
-                <img class="b" src="./pictures/code.jpg" alt="code">
-            </a>
-            <ul class="b">
-                <li><strong>Care About Your Code</strong>: The most crucial aspect is to care about writing clean code. Passion and attention to detail reflect in your HTML.</li>
-                <li><strong>Indentation</strong>: Properly indented code is easier to read, understand, modify, and maintain.</li>
-                <li><strong>Consistency</strong>: Be consistent in your coding practices, whether it's using dashes or underscores, single or double quotes, or the number of spaces for indentation.</li>
-                <li><strong>Avoid Overusing <code>&lt;div&gt;</code> Elements</strong>: Use semantic HTML elements instead of wrapping everything in <code>&lt;div&gt;</code> tags.</li>
-                <li><strong>Minimize Comments</strong>: HTML is self-explanatory, so excessive comments are unnecessary. Rewrite bad code instead of commenting on it.</li>
-                <li><strong>Meaningful Class Names</strong>: Use clear and descriptive names for your classes and IDs to make your HTML more readable.</li>
-                <li><strong>Use Whitespace</strong>: Proper use of whitespace, including indentation and line breaks, makes your code more readable.</li>
-                <li><strong>Learn from the Best</strong>: Study and replicate clean code from open-source projects, blogs, and courses to improve your own coding practices.</li>
-            </ul>  
-        </div>
-        <div class="c">
-            <h2>JSON</h2>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">
-                <img src="./pictures/JSON.png" alt="JSON">
-            </a>
-            <p>JSON is a widely available feature established since July 2015. It works across many devices and browser versions. The JSON namespace object provides static methods for parsing and converting values to JavaScript Object Notation (JSON). Unlike most global objects, JSON is not a constructor and cannot be invoked as a function. All its properties and methods are static, similar to the Math object.</p>
-        </div>
-        <div class="d">
-            <h2>How to Use LocalStorage in JavaScript</h2>
-            <a href="https://www.freecodecamp.org/news/use-local-storage-in-modern-applications/">
-                <img src="./pictures/JS local Storage.png" alt="">
-            </a>
-            <p>This article by Benjamin Semah explores the use of LocalStorage in modern web development. It emphasizes the importance of persisting data to improve performance and enhance the user experience. The article provides a detailed explanation of what LocalStorage is, how it differs from Session Storage, and how to implement it in web applications. It also includes a practical example, instructions on viewing LocalStorage in DevTools, and discusses the benefits and limitations of using LocalStorage. The article is structured with a clear table of contents, guiding readers through each key aspect.</p>
-        </div>
-    </main>
+  <header class="name">
+    <h1>Stephen Krohn</h1>
+  </header>
+  <main class="wrapper">
+    <!-- Security Section -->
+    <div class="security-section">
+      <h2>Security</h2>
+      <a href="https://austingil.com/how-to-build-html-forms-right-security/">
+        <img src="./pictures/security (2).jpg" alt="Security" />
+      </a>
+      <p>
+        The article "How to Build HTML Forms Right: Security" provides an overview
+        of security considerations when creating web forms. It discusses applying
+        security principles to the frontend, backend, DNS, and more. As the final part
+        of a series on building web forms, it emphasizes the importance of secure coding
+        practices to protect against vulnerabilities. Previous parts of the series cover
+        semantics, accessibility, styling, and user experience.
+      </p>
+    </div>
+
+    <!-- Clean Code Section -->
+    <div class="clean-code-section">
+      <h2>Clean code writing</h2>
+      <a href="https://medium.com/@sergimarquez/8-best-practices-to-write-clean-html-code-1cd407e2a7ec">
+        <img src="./pictures/code.jpg" alt="Clean code writing" />
+      </a>
+      <ul>
+        <li><strong>Care About Your Code:</strong> The most crucial aspect is to care about writing clean code. Passion and attention to detail reflect in your HTML.</li>
+        <li><strong>Indentation:</strong> Properly indented code is easier to read, understand, modify, and maintain.</li>
+        <li><strong>Consistency:</strong> Be consistent in your coding practices, whether it's using dashes or underscores, single or double quotes, or the number of spaces for indentation.</li>
+        <li><strong>Avoid Overusing &lt;div&gt; Elements:</strong> Use semantic HTML elements instead of wrapping everything in &lt;div&gt; tags.</li>
+        <li><strong>Minimize Comments:</strong> HTML is self-explanatory, so excessive comments are unnecessary. Rewrite bad code instead of commenting on it.</li>
+        <li><strong>Meaningful Class Names:</strong> Use clear and descriptive names for your classes and IDs to make your HTML more readable.</li>
+        <li><strong>Use Whitespace:</strong> Proper use of whitespace, including indentation and line breaks, makes your code more readable.</li>
+        <li><strong>Learn from the Best:</strong> Study and replicate clean code from open-source projects, blogs, and courses to improve your own coding practices.</li>
+      </ul>
+    </div>
+
+    <!-- JSON Section -->
+    <div class="json-section">
+      <h2>JSON</h2>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">
+        <img src="./pictures/JSON.png" alt="JSON" />
+      </a>
+      <p>
+        JSON is a widely available feature established since July 2015. It works across many devices and browser versions.
+        The JSON namespace object provides static methods for parsing and converting values to JavaScript Object Notation (JSON).
+        Unlike most global objects, JSON is not a constructor and cannot be invoked as a function. All its properties and methods
+        are static, similar to the Math object.
+      </p>
+    </div>
+
+    <!-- LocalStorage Section -->
+    <div class="local-storage-section">
+      <h2>How to Use LocalStorage in JavaScript</h2>
+      <a href="https://www.freecodecamp.org/news/use-local-storage-in-modern-applications/">
+        <img src="./pictures/JS local Storage.png" alt="LocalStorage" />
+      </a>
+      <p>
+        This article by Benjamin Semah explores the use of LocalStorage in modern web development. It emphasizes the importance
+        of persisting data to improve performance and enhance the user experience. The article provides a detailed explanation of
+        what LocalStorage is, how it differs from Session Storage, and how to implement it in web applications. It also includes a
+        practical example, instructions on viewing LocalStorage in DevTools, and discusses the benefits and limitations of using LocalStorage.
+      </p>
+    </div>
+  </main>
 </body>
 </html>
