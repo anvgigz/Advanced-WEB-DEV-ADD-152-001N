@@ -1,0 +1,168 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: rgb(233, 10, 10);
+  --background-color: rgba(128, 128, 128, 0.589);
+  --text-color: white;
+  --font-family: Arial, sans-serif;
+  --font-size-large: 1.5em;
+  --font-size-medium: 1.2em;
+  --font-size-small: 1em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+.hero-image {
+  position: relative;
+  text-align: center;
+  color: var(--text-color);
+}
+.hero-image .hero-image__img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5; /* Optional: to make the text more readable */
+}
+.hero-image .hero-image__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-image .hero-image__text--button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+.hero-image .hero-image__text--button:hover {
+  border: 1px solid var(--secondary-color);
+  background-color: #f0f0f0; /* Optional: change background color on hover */
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Optional: space between elements */
+  padding: 20px;
+}
+.content-container .news-blurb {
+  width: 750px;
+  height: 300px;
+  border: 1px solid grey;
+  box-shadow: 4px 4px 4px 4px var(--background-color);
+}
+.content-container .news-blurb__text {
+  float: left;
+  margin-top: 30px;
+  padding: 0 20px;
+  height: 300px;
+  width: 45%;
+  text-align: center;
+}
+.content-container .news-blurb__text p {
+  font-size: var(--font-size-medium);
+}
+.content-container .news-blurb__title {
+  font-size: var(--font-size-large);
+}
+.content-container .news-blurb__button--hover:hover {
+  padding: 7px 15px;
+  font-size: var(--font-size-small);
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.content-container .news-blurb__figure {
+  display: inline-block;
+  border-left: 2px solid grey;
+  padding-left: 25px;
+  width: 40%;
+  text-align: center;
+}
+.content-container .news-blurb__image {
+  width: 70%;
+  height: 70%;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Optional: space between elements */
+  padding: 20px;
+}
+.content-container .card {
+  width: 250px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px var(--background-color);
+  border-radius: 5px;
+  font-family: var(--font-family);
+}
+.content-container .card__title {
+  text-align: center;
+  writing-mode: vertical-lr;
+  float: left;
+  margin: 10px 0;
+  font-size: var(--font-size-medium);
+}
+.content-container .card__image {
+  width: 100%;
+}
+.content-container .card__figcaption {
+  text-align: center;
+  font-size: var(--font-size-small);
+}
+.content-container .card__text {
+  margin: 5px;
+  font-size: var(--font-size-small);
+}
+
+/* use clearfix when you use floats. also use it after your affected data from the floats. */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img-gallery {
+  text-align: center;
+  /* Element: section */
+  /* Element: figure */
+  /* Element: image */
+  /* Element: figcaption */
+}
+.img-gallery .img-gallery__section--ThreeImages {
+  width: 85%;
+  margin: 0 auto 26px;
+  text-align: center;
+}
+.img-gallery .img-gallery__figure {
+  margin: 0 15px 0 auto;
+  display: inline-block;
+  padding: 1.25em;
+  background: brown;
+  border-radius: 15px;
+}
+.img-gallery .img-gallery__image {
+  display: block;
+  width: 450px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 1.25em;
+}
+.img-gallery .img-gallery__figcaption {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  background: tan;
+  padding: 10px;
+  border-radius: 15px;
+}/*# sourceMappingURL=main.css.map */

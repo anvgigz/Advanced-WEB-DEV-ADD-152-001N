@@ -1,0 +1,11 @@
+// Make sure you select Watch Sass on the bottom
+
+//WARNING -- if main.css is changed manually >> then change to same section is made on SASS
+//then the main.ss will be overwritten and the changes will be lost
+@import "_base-css.scss";
+@import "_hero-image.scss";
+@import "_news-blurb.scss";
+@import "_card.scss";
+@import "_img-gallery.scss";
+
+

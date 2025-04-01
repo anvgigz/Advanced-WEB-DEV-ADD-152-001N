@@ -1,0 +1,41 @@
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Optional: space between elements */
+    padding: 20px;
+    .card {
+        width: 250px;
+        border: 1px solid black;
+        box-shadow: 4px 4px 4px var(--background-color);
+        border-radius: 5px;
+        font-family: var(--font-family);
+    }
+    .card__title {
+        text-align: center;
+        writing-mode: vertical-lr;
+        float: left;
+        margin: 10px 0;
+        font-size: var(--font-size-medium);
+    }
+    .card__image {
+        width: 100%;
+    }
+    
+    .card__figcaption {
+        text-align: center;
+        font-size: var(--font-size-small);
+    }
+    
+    .card__text {
+        margin: 5px;
+        font-size: var(--font-size-small);
+    }
+
+}
+/* use clearfix when you use floats. also use it after your affected data from the floats. */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
