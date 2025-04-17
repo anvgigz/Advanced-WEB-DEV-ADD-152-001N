@@ -1,0 +1,72 @@
+.custom-shape-divider-top-1744300486 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1744300486 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 359px;
+}
+
+.custom-shape-divider-top-1744300486 .shape-fill {
+    fill: #FFD700;
+}
+
+//TOP BANNER ^^^^^^^^^^^^
+
+
+//About TOP BANNER VVVV
+.custom-shape-divider-top-1744312507 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1744312507 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 271px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1744312507 .shape-fill {
+    fill: #FFD700;
+}
+//About TOP BANNER ^^^^^^^^^^^
+
+//BOTTOM BANNER vvvvvvvvvvvv
+
+.custom-shape-divider-bottom-1744300848 {
+    position: relative; /* Relative to its parent container */
+    bottom: 0; /* Not necessary if using `position: relative`, but can be kept for clarity */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1744300848 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 197px;
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1744300848 .shape-fill {
+    fill: #FFD700; /* Gold color for the fill */
+}
+

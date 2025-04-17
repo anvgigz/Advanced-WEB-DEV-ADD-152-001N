@@ -1,0 +1,365 @@
+/* Tablet (min-width: 601px and max-width: 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .Header-Grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0px 0px;
+        position: relative;
+        z-index: 2; /* Higher z-index so it appears on top */
+      
+        &__Name {
+          grid-column: 1 / 4;
+          grid-row: 1 / 2;
+          font-size: 2.5em;
+        }
+      
+        &__Address {
+          grid-column: 4 / 5;
+          grid-row: 1 / 2;
+          gap: 2px;
+        }
+      
+        &__NAV {      
+            grid-column: 5 / 6;
+            grid-row: 1 / 2;
+          }  
+          ul {
+            li {
+              font-size: var(--font-size-medium);
+            }
+          }
+          
+        &__PageInfo {
+          grid-column: 3/ 6;
+          grid-row: 3 / 3;
+          color: white;
+          font-weight: bold;
+          font-size: 3em;
+          text-align: left;
+        }
+      
+        &--Color {
+          color: var(--Header-Color);
+        }
+        &__Logo {
+          grid-column: 3 / 6;
+          grid-row: 2 / 2;
+          width: 40%;
+          text-align: left;
+        }
+      }
+      .content-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: space-between;
+        gap: 20px; /* Optional: space between elements */
+        padding: 20px;
+        
+    
+        .news-blurb {
+            width: 780px;
+            height: 300px;
+            border: 1px solid grey;
+            box-shadow: 4px 4px 4px 4px var(--background-color);
+            background-color: #AD9511;
+    
+            &__text {
+                float: left;
+                height: 300px;
+                width: 45%;
+                text-align: left;
+    
+                p {
+                    font-size: var(--font-size-medium);
+                }
+            }
+    
+            &__title {
+                font-size: var(--font-size-large);
+            }
+    
+            &__button--hover:hover {
+                padding: 3px 5px;
+                font-size: var(--font-size-small);
+                border-radius: 4px;
+                background-color: var(--primary-color);
+                cursor: pointer;
+            }
+    
+            &__figure {
+                display: inline-block;
+                border-left: 2px solid grey;
+                padding-left: 5px;
+                width: 40%;
+                text-align: center;
+    
+                
+            }
+            &__image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    
+        .news-blurb_Project1 {
+            grid-column: 1 / 12;
+            grid-row: 1 / 2;
+        }
+    
+        .news-blurb_Project2 {
+            grid-column: 1 / 12;
+            grid-row: 2 / 2;
+        }
+    
+        .card_skills1 {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+    
+        .card_skills2 {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+        .card_skills3 {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+        .card_skills4 {
+            grid-column: 1 / 2;
+            grid-row: 4 / 4;
+        }
+        .card_skills5 {
+            grid-column: 2 / 3;
+            grid-row: 4 / 4;
+        }
+        .card_skills6 {
+            grid-column: 3 / 4;
+            grid-row: 4 / 4;
+        }
+    
+    
+    
+        .card {
+            width: 250px;
+            border: 1px solid black;
+            box-shadow: 4px 4px 4px var(--background-color);
+            border-radius: 5px;
+            font-family: var(--font-family);
+            background-color: #AD9511;
+    
+            &__title {
+                text-align: center;
+                writing-mode: vertical-lr;
+                float: left;
+                margin: 10px 0;
+                font-size: var(--font-size-medium);
+            }
+    
+            &__image {
+                width: 100%;
+            }
+    
+            &__figcaption {
+                text-align: center;
+                font-size: var(--font-size-small);
+            }
+    
+            &__text {
+                margin: 5px;
+                font-size: var(--font-size-small);
+            }
+        }
+    }
+    
+    /* use clearfix when you use floats. also use it after your affected data from the floats. */
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .Header-Grid {
+        display: block;
+        gap: 0px 0px;
+        position: relative;
+        z-index: 2; /* Higher z-index so it appears on top */
+      
+        &__Name {
+          font-size: 2.5em;
+        }
+      
+        &__Address {
+          gap: 2px;
+          background-color: #AD9511;
+          padding: 5px; 
+          display: inline;
+        }
+      
+        &__NAV {      
+          }  
+          ul {
+            li {
+              font-size: var(--font-size-medium);
+              background-color: #AD9511;
+              padding: 5px; 
+              display: inline;
+
+            }
+          }
+          
+        &__PageInfo {
+            background-color: #AD9511;
+            padding: 5px; 
+            display: inline;
+          font-weight: bold;
+          font-size: 3em;
+          text-align: left;
+        }
+      
+        &--Color {
+          color: var(--Header-Color);
+        }
+        &__Logo {
+          width: 40%;
+          text-align: left;
+          display: none;
+        }
+      }
+      .content-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        justify-content: space-between;
+        gap: 20px; /* Optional: space between elements */
+        padding: 20px;
+        
+    
+        .news-blurb {
+            width: 780px;
+            height: 300px;
+            border: 1px solid grey;
+            box-shadow: 4px 4px 4px 4px var(--background-color);
+            background-color: #AD9511;
+    
+            &__text {
+                float: left;
+                height: 300px;
+                width: 45%;
+                text-align: left;
+    
+                p {
+                    font-size: var(--font-size-medium);
+                }
+            }
+    
+            &__title {
+                font-size: var(--font-size-large);
+            }
+    
+            &__button--hover:hover {
+                padding: 3px 5px;
+                font-size: var(--font-size-small);
+                border-radius: 4px;
+                background-color: var(--primary-color);
+                cursor: pointer;
+            }
+    
+            &__figure {
+                display: inline-block;
+                border-left: 2px solid grey;
+                padding-left: 5px;
+                width: 40%;
+                text-align: center;
+    
+                
+            }
+            &__image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    
+        .news-blurb_Project1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+    
+        .news-blurb_Project2 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 2;
+        }
+    
+        .card_skills1 {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+    
+        .card_skills2 {
+            grid-column: 1/2;
+            grid-row: 4 / 4;
+        }
+        .card_skills3 {
+            grid-column: 1 / 2;
+            grid-row: 5 / 5;
+        }
+        .card_skills4 {
+            grid-column: 1 / 2;
+            grid-row: 6 / 6;
+        }
+        .card_skills5 {
+            grid-column: 1 / 2;
+            grid-row: 7 / 7;
+        }
+        .card_skills6 {
+            grid-column: 1 / 2;
+            grid-row: 8 / 8;
+        }
+        
+    
+    
+    
+    
+        .card {
+            width: 250px;
+            border: 1px solid black;
+            box-shadow: 4px 4px 4px var(--background-color);
+            border-radius: 5px;
+            font-family: var(--font-family);
+            background-color: #AD9511;
+    
+            &__title {
+                text-align: center;
+                writing-mode: vertical-lr;
+                float: left;
+                margin: 10px 0;
+                font-size: var(--font-size-medium);
+            }
+    
+            &__image {
+                width: 100%;
+            }
+    
+            &__figcaption {
+                text-align: center;
+                font-size: var(--font-size-small);
+            }
+    
+            &__text {
+                margin: 5px;
+                font-size: var(--font-size-small);
+            }
+        }
+    }
+    
+    /* use clearfix when you use floats. also use it after your affected data from the floats. */
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
