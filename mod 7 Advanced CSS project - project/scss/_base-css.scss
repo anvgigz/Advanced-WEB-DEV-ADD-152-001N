@@ -1,0 +1,18 @@
+
+:root{
+    --primary-color: #B87328;
+    --background-color: #3D0F0F;
+    --Header-Color: #300eac; /*Original choice did not work well with design color */
+    --quaternary-color: teal;
+    --font-size-large: 2em;
+    --font-size-medium: 1.5em;
+}
+
+html{
+    background-color: var(--background-color);
+}
+header{
+    font-family: "Jua", "Jomolhari", serif;
+  font-weight: 400;
+  font-style: normal;
+}
