@@ -1,0 +1,30 @@
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: var(--text-color);
+  
+    &__img {
+      width: 100%;
+      height: auto;
+      opacity: 0.5; /* Optional: to make the text more readable */
+    }
+  
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    &__text--button {
+      padding: 10px 20px;
+      background-color: var(--primary-color);
+      border: none;
+      cursor: pointer;
+  
+      &:hover {
+        border: 1px solid var(--secondary-color);
+        background-color: #f0f0f0; /* Optional: change background color on hover */
+      }
+    }
+  }
