@@ -1,0 +1,262 @@
+//working with animation
+
+.containeranimation {
+    width: 200px;
+    height: 100px;
+    position: relative;
+  
+    .boxanimation_left-slide {
+      width: 100%;
+      position: relative;
+      left: -300px;
+  
+    //   &:hover {
+    //     animation: left_in 3s;
+    //     animation-fill-mode: forwards;
+    //   }
+    }
+  
+    &:hover .boxanimation_left-slide {
+      animation: left_in 3s;
+      animation-fill-mode: forwards;
+    }
+  }
+@keyframes left_in {
+    from {
+        left: -300px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+
+
+
+
+.containeranimation {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    
+
+    .boxanimation {
+        width: 50%;
+        position: relative;
+
+        &:hover {
+            animation-name: square; //name of the animation
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            animation-direction:normal; //default is normal
+            animation-delay: 0ms;
+            animation-timing-function: linear; //default is linear
+            //animation-fill-mode: forwards; //keeps the last frame of the animation
+        }
+    }
+}
+
+@keyframes roll {
+
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+
+
+@keyframes square {
+
+    0% {
+        left: 0;
+        top: 0;
+
+    }
+
+    25% {
+        left: 200px;
+        top: 0;
+    }
+
+    50% {
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        left: 0;
+        top: 200px;
+
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+
+
+//working with transform
+
+.containertransform {
+
+    .boxtransform {
+
+        &:hover {
+            //transform: skew(20deg);
+            //transform: rotate(20deg);
+            //transform: scale(.5, .5); // scale x and y axis
+            //transform: scale(.5);
+            transition: 2s ease-in;
+            transform: translate(50px, 50px); // move 50px to the right and down
+        }
+    }
+}
+
+//use skewX(20deg) or skewY(20deg) to skew in the x or y direction
+
+
+
+
+// transition continued info working with pictures
+
+
+.container {
+    border: 1px solid black;
+    display: inline-block; // for border to be around image
+    overflow: hidden; //i f using the bottom overflow hidden may be needed.
+
+    &:hover .left_slide {
+        transition: .5s ease-in;
+        bottom: 0px; //comes in from top change to bottom or right or left
+    }
+
+    .left_slide {
+        width: 50%;
+        position: relative;
+        bottom: -1000px; //comes in form the top change to bottom or right left
+        transition: left 1s ease-in-out; // transition off the page
+
+    }
+
+
+}
+
+// .container {
+//     border: 1px solid black;
+//     display: inline-block; // for border to be around image
+    
+
+//     &:hover .left_slide {
+//         transition: 1s ease-in;
+//         top: 0px; //comes in from top change to bottom or right or left
+//     }
+
+//     .left_slide {
+//         width: 50%;
+//         position: relative;
+//         top: -1000px; //comes in form the top change to bottom or right left
+//         transition: left 1s ease-in-out; // transition off the page
+
+
+//     }
+
+
+// }
+
+
+// .container {
+//     border: 1px solid black;
+//     display: inline-block; // for border to be around image
+
+//     &:hover .left_slide {
+//         transition: 1s ease-in;
+//         left: 0px; //comes in from left
+//     }
+
+//     .left_slide {
+//         width: 50%;
+//         position: relative;
+//         left: -1000px; //comes in form the left
+//         transition: left 1s ease-in-out; // transition off the page
+
+
+//     }
+
+
+// }
+
+
+
+//working with transition
+
+
+// .box {
+//     width: 100px;
+//     height: 100px;
+//     background-color: green;
+//     transition-property: width,height,font-size;
+//     transition-delay: 0s;
+//     transition-duration: 2s;
+//     transition-timing-function: linear;
+
+//     &:hover {
+//         width: 400px;
+//         height: 50px;
+//         font-size: xx-large;
+//     }
+// }
+
+// .a {
+//     // transition-timing-function: linear;
+//     transition: width 2s linear, 0;
+//     // 2s( duration), 0s (delay), linear (timing function)
+//        transition: width 2s linear, height 2s linear, font-size 2s linear;
+// }
+
+
+// .b {
+//     transition-timing-function: ease-in;
+// }
+
+
+// .c {
+//     transition-timing-function: ease-out;
+// }
+
+
+// .d {
+//     transition-timing-function: ease-in-out;
+// }
+
+
+
+
+
+
+
+
+
+
+
+html{
+    background-color: teal;
+}
+
+
+
+// .box {
+//     width: 100px;
+//     height: 100px;
+//     background-color: green;
+
+//     &:hover {
+//         width: 400px;;
+//     }
+// }
+
+@import"_text-bubble.scss";

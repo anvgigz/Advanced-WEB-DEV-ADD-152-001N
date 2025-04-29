@@ -1,0 +1,31 @@
+
+.news-blurb_Project1{
+
+    position: relative;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    
+
+}
+
+@keyframes rotate{
+    0% {
+        
+    }
+    25% {
+        rotate: 90deg;
+        
+    }
+    50% {
+        rotate: 180deg;
+        
+    }
+    75% {
+        rotate: 270deg;
+        
+    }
+    100% {
+        rotate: 360deg;
+    }
+}

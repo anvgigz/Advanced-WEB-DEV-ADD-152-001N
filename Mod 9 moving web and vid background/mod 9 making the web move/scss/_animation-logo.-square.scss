@@ -1,0 +1,42 @@
+
+.Header-Grid__Logo {
+
+    position: relative;
+    animation-name: square;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+}
+
+
+
+ .arrow {
+    position: relative;
+    animation-name: square, rotate;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+ }
+
+@keyframes square {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 100px;
+        top: 0;
+    }
+    50% {
+        left: 100px;
+        top: 100px;
+    }
+    75% {
+        left: 0;
+        top: 100px;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
