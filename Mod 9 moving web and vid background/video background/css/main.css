@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: rgb(233, 10, 10);
+  --background-color: #799ad1;
+  --text-color: white;
+  --font-family: Arial, sans-serif;
+  --font-size-large: 1.5em;
+  --font-size-medium: 1.2em;
+  --font-size-small: 1em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+}
+
+footer {
+  background-color: #AD9511;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Calibri, sans-serif;
+}
+
+.hero-image {
+  position: relative;
+  text-align: center;
+  color: var(--text-color);
+}
+.hero-image__img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5; /* Optional: to make the text more readable */
+}
+.hero-image__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-image__text--button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+.hero-image__text--button:hover {
+  border: 1px solid var(--secondary-color);
+  background-color: #f0f0f0; /* Optional: change background color on hover */
+}/*# sourceMappingURL=main.css.map */
