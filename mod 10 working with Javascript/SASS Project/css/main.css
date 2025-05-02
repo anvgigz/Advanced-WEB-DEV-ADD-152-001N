@@ -1,0 +1,1895 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: rgb(233, 10, 10);
+  --background-color: #001F54;
+  --text-color: white;
+  --font-family: Arial, sans-serif;
+  --font-size-large: 1.5em;
+  --font-size-medium: 1.2em;
+  --font-size-small: 1em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+}
+
+footer {
+  background-color: #AD9511;
+}
+
+.custom-shape-divider-top-1744300486 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1744300486 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 359px;
+}
+
+.custom-shape-divider-top-1744300486 .shape-fill {
+  fill: #FFD700;
+}
+
+.custom-shape-divider-top-1744312507 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1744312507 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 271px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1744312507 .shape-fill {
+  fill: #FFD700;
+}
+
+.custom-shape-divider-bottom-1744300848 {
+  position: relative; /* Relative to its parent container */
+  bottom: 0; /* Not necessary if using `position: relative`, but can be kept for clarity */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-1744300848 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 197px;
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-1744300848 .shape-fill {
+  fill: #FFD700; /* Gold color for the fill */
+}
+
+.Header-Grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  position: relative;
+  z-index: 2; /* Higher z-index so it appears on top */
+}
+.Header-Grid__Name {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.Header-Grid__Address {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  gap: 2px;
+}
+.Header-Grid__NAV {
+  grid-column: 6/7;
+  grid-row: 1/2;
+}
+.Header-Grid ul li {
+  font-size: var(--font-size-medium);
+  list-style-type: none;
+}
+.Header-Grid__PageInfo {
+  grid-column: 7/8;
+  grid-row: 1/2;
+}
+.Header-Grid--Color {
+  color: var(--Header-Color);
+}
+.Header-Grid__Logo {
+  grid-column: 8/9;
+  grid-row: 1/2;
+  width: 80%;
+}
+
+@media (min-width: 1129px) and (max-width: 1544px) {
+  .Header-Grid__Name {
+    background-color: #FFD700;
+    padding: 1px;
+    display: inline;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+@media (min-width: 1151px) and (max-width: 1522px) {
+  #nav-menu li:nth-child(3) {
+    background-color: #FFD700;
+    font-weight: bold;
+  }
+}
+@media (min-width: 600px) and (max-width: 1150px) {
+  .Header-Grid {
+    gap: 0px 0px;
+    position: relative;
+    z-index: 2; /* Higher z-index so it appears on top */
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    display: flex;
+  }
+  .Header-Grid__Name {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .Header-Grid__Address {
+    gap: 2px;
+    background-color: #FFD700;
+    padding: 5px;
+    display: inline;
+  }
+  .Header-Grid ul li {
+    font-size: var(--font-size-medium);
+    padding: 5px;
+    display: inline;
+  }
+  .Header-Grid__PageInfo {
+    background-color: #FFD700;
+    padding: 5px;
+    display: inline;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: left;
+  }
+  .Header-Grid--Color {
+    color: var(--Header-Color);
+  }
+  .Header-Grid__Logo {
+    width: 40%;
+  }
+}
+@media (min-width: 100px) and (max-width: 599px) {
+  .Header-Grid {
+    gap: 0px 0px;
+    position: relative;
+    z-index: 2; /* Higher z-index so it appears on top */
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    display: flex;
+  }
+  .Header-Grid__Name {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .Header-Grid__Address {
+    gap: 2px;
+    background-color: #FFD700;
+    padding: 5px;
+    display: inline;
+  }
+  .Header-Grid__NAV {
+    z-index: 9;
+  }
+  .Header-Grid ul li {
+    font-size: var(--font-size-medium);
+    padding: 5px;
+    display: inline;
+  }
+  .Header-Grid__PageInfo {
+    background-color: #FFD700;
+    padding: 5px;
+    display: inline;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: left;
+  }
+  .Header-Grid--Color {
+    color: var(--Header-Color);
+  }
+  .Header-Grid__Logo {
+    width: 40%;
+  }
+}
+.active {
+  background-color: rgb(0, 255, 89) !important;
+  border-top-left-radius: 35% !important;
+  border-top-right-radius: 35% !important;
+}
+
+@media screen and (max-width: 599px) {
+  .hamburger-menu {
+    padding-right: 1.5rem;
+    cursor: pointer;
+  }
+  .hamburger-menu .line {
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    margin-bottom: 10px;
+    background-color: greenyellow;
+    cursor: pointer;
+  }
+  #nav-menu {
+    position: fixed;
+    width: 94%;
+    top: 6rem;
+    left: 18px;
+    background-color: #FFD700;
+    font-weight: 600;
+  }
+  #nav-menu a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+  }
+  #nav-menu a:hover {
+    background-color: greenyellow;
+  }
+  .hide {
+    display: none;
+  }
+  .Header-Grid {
+    transition: margin-top 1s ease-in-out;
+    background-color: none;
+  }
+}
+/* for Desktop view  */
+@media screen and (min-width: 600px) {
+  #nav-menu {
+    display: inline;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+  #nav-menu a {
+    display: inline;
+    padding: 15px 20px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+.hero-image {
+  position: relative;
+  text-align: center;
+  color: var(--text-color);
+}
+.hero-image__img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5; /* Optional: to make the text more readable */
+}
+.hero-image__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-image__text--button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+.hero-image__text--button:hover {
+  border: 1px solid var(--secondary-color);
+  background-color: #f0f0f0; /* Optional: change background color on hover */
+}
+
+.iframe_Resume {
+  width: 90%;
+  height: 99%;
+  border: none;
+  z-index: 0;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+}
+.content-container .news-blurb {
+  width: 780px;
+  height: 300px;
+  border: 1px solid grey;
+  box-shadow: 4px 4px 4px 4px var(--background-color);
+  background-color: #AD9511;
+}
+.content-container .news-blurb__text {
+  float: left;
+  padding: 0 0px;
+  height: 300px;
+  width: 45%;
+  text-align: center;
+}
+.content-container .news-blurb__text p {
+  font-size: var(--font-size-medium);
+}
+.content-container .news-blurb__title {
+  font-size: var(--font-size-large);
+}
+.content-container .news-blurb__button--hover:hover {
+  padding: 3px 5px;
+  font-size: var(--font-size-small);
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.content-container .news-blurb__figure {
+  display: inline-block;
+  border-left: 2px solid grey;
+  padding-left: 5px;
+  width: 40%;
+  text-align: center;
+}
+.content-container .news-blurb__image {
+  width: 100%;
+  height: 100%;
+}
+.content-container .news-blurb_Project1 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+.content-container .news-blurb_Project2 {
+  grid-column: 5/12;
+  grid-row: 1/2;
+}
+.content-container .card_skills1 {
+  grid-column: 1/2;
+  grid-row: 2/2;
+}
+.content-container .card_skills2 {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+.content-container .card_skills3 {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+.content-container .card_skills4 {
+  grid-column: 5/6;
+  grid-row: 2/2;
+}
+.content-container .card_skills5 {
+  grid-column: 6/6;
+  grid-row: 2/2;
+}
+.content-container .card_skills6 {
+  grid-column: 7/7;
+  grid-row: 2/2;
+  float: left;
+}
+.content-container .card {
+  width: 250px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px var(--background-color);
+  border-radius: 5px;
+  font-family: var(--font-family);
+  background-color: #AD9511;
+}
+.content-container .card__title {
+  text-align: center;
+  writing-mode: vertical-lr;
+  float: left;
+  margin: 10px 0;
+  font-size: var(--font-size-medium);
+}
+.content-container .card__image {
+  width: 100%;
+}
+.content-container .card__figcaption {
+  text-align: center;
+  font-size: var(--font-size-small);
+  font-weight: bold;
+}
+.content-container .card__text {
+  margin: 5px;
+  font-size: var(--font-size-small);
+}
+
+/* use clearfix when you use floats. also use it after your affected data from the floats. */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Work-Details {
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  display: flex;
+  gap: 0px 0px;
+  position: relative;
+  bottom: 0;
+  z-index: 2; /* Higher z-index so it appears on top */
+  font-weight: bold;
+  color: white;
+}
+.Work-Details__Requirements {
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  font-size: 1.5em;
+}
+.Work-Details__Requirements li {
+  list-style: none;
+}
+.Work-Details__Values {
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  font-size: 1.5em;
+}
+.Work-Details__Values li {
+  list-style: none;
+}
+
+.Email {
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+.Email_Button {
+  display: block;
+  width: 200px;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+.Email_Button:hover {
+  transform: scale(1.05); /* Slightly enlarges the button */
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer_Shape-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.footer_Shape-gridcustom-shape-divider-bottom-1744300848 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+@media (min-width: 1533px) and (max-width: 1725px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .content-container .news-blurb {
+    width: 780px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    height: 300px;
+    width: 45%;
+    text-align: left;
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 5px;
+    width: 40%;
+    text-align: center;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/12;
+    grid-row: 1/2;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 4/12;
+    grid-row: 1/2;
+    z-index: 2;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills3 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills4 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills5 {
+    grid-column: 5/6;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills6 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 1372px) and (max-width: 1532px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .content-container .news-blurb {
+    width: 680px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    height: 300px;
+    width: 45%;
+    text-align: left;
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 5px;
+    width: 40%;
+    text-align: center;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/12;
+    grid-row: 1/2;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 6/12;
+    grid-row: 1/2;
+    z-index: 2;
+  }
+  .content-container .card_skills1 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills2 {
+    grid-column: 5/6;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills3 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills4 {
+    grid-column: 4/5;
+    grid-row: 4/4;
+  }
+  .content-container .card_skills5 {
+    grid-column: 5/6;
+    grid-row: 4/4;
+  }
+  .content-container .card_skills6 {
+    grid-column: 6/7;
+    grid-row: 4/4;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 1224px) and (max-width: 1372px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .content-container .news-blurb {
+    width: 580px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    height: 300px;
+    width: 45.7979%;
+    text-align: left;
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 5px;
+    width: 40%;
+    text-align: center;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/12;
+    grid-row: 1/2;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 6/12;
+    grid-row: 1/2;
+    overflow-y: auto;
+    z-index: 2;
+  }
+  .content-container .card_skills1 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills2 {
+    grid-column: 5/6;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills3 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills4 {
+    grid-column: 4/5;
+    grid-row: 4/4;
+  }
+  .content-container .card_skills5 {
+    grid-column: 5/6;
+    grid-row: 4/4;
+  }
+  .content-container .card_skills6 {
+    grid-column: 6/7;
+    grid-row: 4/4;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 1129px) and (max-width: 1244px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .content-container .news-blurb {
+    width: 1080px;
+    height: 400px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    height: 300px;
+    width: 45%;
+    text-align: left;
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 5px;
+    width: 40%;
+    text-align: center;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/12;
+    grid-row: 1/2;
+    z-index: 5;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 1/12;
+    grid-row: 2/2;
+    overflow-y: auto;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 50px;
+  }
+  .content-container .card_skills2 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 325px;
+  }
+  .content-container .card_skills3 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 600px;
+  }
+  .content-container .card_skills4 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 50px;
+  }
+  .content-container .card_skills5 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 325px;
+  }
+  .content-container .card_skills6 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 600px;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 1128px) and (max-width: 1244px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .content-container .news-blurb {
+    width: 1000px;
+    height: 400px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    height: 300px;
+    width: 45%;
+    text-align: left;
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 5px;
+    width: 40%;
+    text-align: center;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/12;
+    grid-row: 1/2;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 1/12;
+    grid-row: 2/2;
+    overflow-y: auto;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 150px;
+  }
+  .content-container .card_skills2 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 425px;
+  }
+  .content-container .card_skills3 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 700px;
+  }
+  .content-container .card_skills4 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 150px;
+  }
+  .content-container .card_skills5 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 425px;
+  }
+  .content-container .card_skills6 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 700px;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 949px) and (max-width: 1128px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .content-container .news-blurb {
+    width: 900px;
+    height: 400px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    height: 300px;
+    width: 45%;
+    text-align: left;
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 5px;
+    width: 40%;
+    text-align: center;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/12;
+    grid-row: 1/2;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 1/12;
+    grid-row: 2/2;
+    overflow-y: auto;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 50px;
+  }
+  .content-container .card_skills2 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 325px;
+  }
+  .content-container .card_skills3 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 600px;
+  }
+  .content-container .card_skills4 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 50px;
+  }
+  .content-container .card_skills5 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 325px;
+  }
+  .content-container .card_skills6 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 600px;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/* Tablet (min-width: 601px and max-width: 992px) */
+@media (min-width: 780px) and (max-width: 948px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+  .content-container .news-blurb {
+    width: 780px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    height: 300px;
+    width: 45%;
+    text-align: left;
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 5px;
+    width: 40%;
+    text-align: center;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/12;
+    grid-row: 1/2;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 1/12;
+    grid-row: 2/2;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills3 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .content-container .card_skills4 {
+    grid-column: 1/2;
+    grid-row: 4/4;
+  }
+  .content-container .card_skills5 {
+    grid-column: 2/3;
+    grid-row: 4/4;
+  }
+  .content-container .card_skills6 {
+    grid-column: 3/4;
+    grid-row: 4/4;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 601px) and (max-width: 779px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+  .content-container .news-blurb {
+    width: 680px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    height: 300px;
+    width: 45%;
+    text-align: left;
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 5px;
+    width: 40%;
+    text-align: center;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/12;
+    grid-row: 1/2;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 1/12;
+    grid-row: 2/2;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-left: 50px;
+  }
+  .content-container .card_skills2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 50px;
+  }
+  .content-container .card_skills3 {
+    grid-column: 1/2;
+    grid-row: 4/4;
+    margin-left: 50px;
+  }
+  .content-container .card_skills4 {
+    grid-column: 2/3;
+    grid-row: 4/4;
+    margin-left: 50px;
+  }
+  .content-container .card_skills5 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 50px;
+  }
+  .content-container .card_skills6 {
+    grid-column: 2/3;
+    grid-row: 5/5;
+    margin-left: 50px;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+  .content-container .news-blurb {
+    width: 480px;
+    height: 325px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    height: 300px;
+    width: 45%;
+    text-align: left;
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb .news-blurb__figure {
+    border-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    display: inline-block;
+    border-left: 2px solid grey;
+    padding-left: 5px;
+    width: 40%;
+    text-align: center;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/12;
+    grid-row: 1/2;
+    margin-left: 25px;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 1/12;
+    grid-row: 2/2;
+    margin-left: 25px;
+  }
+  .content-container .news-blurb_Project2 .news-blurb__text {
+    overflow-y: auto;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-left: 150px;
+  }
+  .content-container .card_skills2 {
+    grid-column: 1/2;
+    grid-row: 4/4;
+    margin-left: 150px;
+  }
+  .content-container .card_skills3 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 150px;
+  }
+  .content-container .card_skills4 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 150px;
+  }
+  .content-container .card_skills5 {
+    grid-column: 1/2;
+    grid-row: 7/7;
+    margin-left: 150px;
+  }
+  .content-container .card_skills6 {
+    grid-column: 1/2;
+    grid-row: 8/8;
+    margin-left: 150px;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/* Mobile (max-width: 600px) */
+@media (min-width: 473px) and (max-width: 500px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 20px; /* Optional: space between elements */
+    padding: 20px;
+  }
+  .content-container .news-blurb {
+    width: 450px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    width: 45%;
+    text-align: left;
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    border-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 325px;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 1/2;
+    grid-row: 2/2;
+  }
+  .content-container .news-blurb_Project2 .news-blurb__text {
+    overflow-y: auto;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-left: 100px;
+  }
+  .content-container .card_skills2 {
+    grid-column: 1/2;
+    grid-row: 4/4;
+    margin-left: 100px;
+  }
+  .content-container .card_skills3 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 100px;
+  }
+  .content-container .card_skills4 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 100px;
+  }
+  .content-container .card_skills5 {
+    grid-column: 1/2;
+    grid-row: 7/7;
+    margin-left: 100px;
+  }
+  .content-container .card_skills6 {
+    grid-column: 1/2;
+    grid-row: 8/8;
+    margin-left: 100px;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 419px) and (max-width: 472px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 20px; /* Optional: space between elements */
+    padding: 20px;
+  }
+  .content-container .news-blurb {
+    width: 400px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    width: 45%;
+    text-align: left;
+    overflow-y: auto;
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    border-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 325px;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 1/2;
+    grid-row: 2/2;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-left: 90px;
+  }
+  .content-container .card_skills2 {
+    grid-column: 1/2;
+    grid-row: 4/4;
+    margin-left: 90px;
+  }
+  .content-container .card_skills3 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 90px;
+  }
+  .content-container .card_skills4 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 90px;
+  }
+  .content-container .card_skills5 {
+    grid-column: 1/2;
+    grid-row: 7/7;
+    margin-left: 90px;
+  }
+  .content-container .card_skills6 {
+    grid-column: 1/2;
+    grid-row: 8/8;
+    margin-left: 90px;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (max-width: 418px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 20px; /* Optional: space between elements */
+    padding: 20px;
+  }
+  .content-container .news-blurb {
+    width: 350px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px 4px var(--background-color);
+    background-color: #AD9511;
+  }
+  .content-container .news-blurb__text {
+    float: left;
+    width: 45%;
+    text-align: left;
+    overflow-y: auto;
+  }
+  .content-container .news-blurb__text p {
+    font-size: var(--font-size-medium);
+  }
+  .content-container .news-blurb__title {
+    font-size: var(--font-size-large);
+  }
+  .content-container .news-blurb__button--hover:hover {
+    padding: 3px 5px;
+    font-size: var(--font-size-small);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .content-container .news-blurb__figure {
+    border-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .content-container .news-blurb__image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-container .news-blurb_Project1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 325px;
+    margin-left: 15px;
+  }
+  .content-container .news-blurb_Project2 {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin-left: 15px;
+  }
+  .content-container .card_skills1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-left: 80px;
+  }
+  .content-container .card_skills2 {
+    grid-column: 1/2;
+    grid-row: 4/4;
+    margin-left: 80px;
+  }
+  .content-container .card_skills3 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    margin-left: 80px;
+  }
+  .content-container .card_skills4 {
+    grid-column: 1/2;
+    grid-row: 6/6;
+    margin-left: 80px;
+  }
+  .content-container .card_skills5 {
+    grid-column: 1/2;
+    grid-row: 7/7;
+    margin-left: 80px;
+  }
+  .content-container .card_skills6 {
+    grid-column: 1/2;
+    grid-row: 8/8;
+    margin-left: 80px;
+  }
+  .content-container .card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--background-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #AD9511;
+  }
+  .content-container .card__title {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+    font-size: var(--font-size-medium);
+  }
+  .content-container .card__image {
+    width: 100%;
+  }
+  .content-container .card__figcaption {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+  .content-container .card__text {
+    margin: 5px;
+    font-size: var(--font-size-small);
+  }
+  /* use clearfix when you use floats. also use it after your affected data from the floats. */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}/*# sourceMappingURL=main.css.map */

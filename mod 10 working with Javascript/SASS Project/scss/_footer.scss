@@ -1,0 +1,73 @@
+.Work-Details {
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    // align-items: center;
+    display: flex;
+    gap: 0px 0px;
+    position: relative;
+    bottom: 0;
+    z-index: 2; /* Higher z-index so it appears on top */
+    font-weight: bold;
+    color: white;
+  
+    &__Requirements {
+        position: relative;
+        bottom: 0;
+        z-index: 2;
+        // grid-column: 1 / 2;
+        // grid-row: 1/ 2;
+      font-size: 1.5em;
+      
+        li{
+                list-style: none;
+            }
+
+    }
+
+    &__Values {
+        position: relative;
+        bottom: 0;
+        z-index: 2;
+        // grid-column: 2 / 2;
+        // grid-row: 1 / 2;
+        font-size: 1.5em;
+        li{
+            list-style: none;
+
+        }
+      }
+}
+
+.Email {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+
+    &_Button {
+        display: block;
+        width: 200px;
+        padding: 10px 15px;
+        font-weight: bold;
+        transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+    &_Button:hover {
+        transform: scale(1.05); /* Slightly enlarges the button */
+        background-color: var(--primary-color);
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+.footer_Shape-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    &custom-shape-divider-bottom-1744300848{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
