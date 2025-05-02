@@ -1,0 +1,144 @@
+.Header-Grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    position: relative;
+    z-index: 2; /* Higher z-index so it appears on top */
+  
+    &__Name {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+  
+    &__Address {
+      grid-column: 3 / 5;
+      grid-row: 1 / 2;
+      gap: 2px;
+    }
+  
+    &__NAV {      
+        grid-column: 6 / 7;
+        grid-row: 1 / 2;
+      }  
+      ul {
+        li {
+          font-size: var(--font-size-medium);
+          list-style-type: none;
+        }
+      }
+      
+    &__PageInfo {
+      grid-column: 7/ 8;
+      grid-row: 1 / 2;
+    }
+  
+    &--Color {
+      color: var(--Header-Color);
+    }
+    &__Logo {
+      grid-column: 8 / 9;
+      grid-row: 1 / 2;
+      width: 80%;
+    }
+  }
+
+    @media (min-width: 1129px) and (max-width: 1469px){
+    .Header-Grid__Name{
+        background-color: #AD9511;
+        padding: 1px; 
+        display: inline;
+        font-weight: bold;
+        text-align: left;
+        
+      }
+}
+
+
+//   @media (min-width: 993px) and (max-width: 1477px){
+//     .Header-Grid__Name{
+//         background-color: #AD9511;
+//         padding: 1px; 
+//         display: inline;
+//         font-weight: bold;
+//         text-align: left;
+        
+//       }
+// }
+
+//   @media (min-width: 993px) and (max-width: 1183px){
+//     .Header-Grid__Address{
+//         background-color: #AD9511;
+//         padding: 1px; 
+//         display: inline;
+//         font-weight: bold;
+//         text-align: left;
+//     }
+// }
+
+
+@media (min-width: 100px) and (max-width: 1120px){
+  //HEADER
+  .Header-Grid {
+    display: block;
+    gap: 0px 0px;
+    position: relative;
+    z-index: 2; /* Higher z-index so it appears on top */
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    // align-items: center;
+    display: flex;
+
+  
+    &__Name {
+      font-size: 2.5em;
+      text-align: center;
+    }
+  
+    &__Address {
+      gap: 2px;
+      background-color: #AD9511;
+      padding: 5px; 
+      display: inline;
+      
+    }
+  
+    &__NAV {  
+      //not in use 
+      }  
+      ul {
+        li {
+          font-size: var(--font-size-medium);
+          background-color: #AD9511;
+          padding: 5px; 
+          display: inline;
+
+        }
+      }
+      
+    &__PageInfo {
+        background-color: #AD9511;
+        padding: 5px; 
+        display: inline;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: left;
+    }
+  
+    &--Color {
+      color: var(--Header-Color);
+    }
+    &__Logo {
+      width: 40%;
+    }
+  }
+
+}
+
+
+.hamburger-menu{
+  padding-right: 1.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+// Make sure you select Watch Sass on the bottom
+
+//WARNING -- if main.css is changed manually >> then change to same section is made on SASS
+//then the main.ss will be overwritten and the changes will be lost
+@import "_base-css.scss";
+@import "_TopBottomGoldBanner.scss";
+@import "_nav.scss";
+@import "_hamburger.scss";
+@import "_news-blurb_card.scss";
+@import "_footer.scss";
+@import "_media.scss";
+
+

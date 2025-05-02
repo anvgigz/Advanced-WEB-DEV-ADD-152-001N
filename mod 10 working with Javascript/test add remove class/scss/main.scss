@@ -1,0 +1,31 @@
+
+@import "_hamburgermenu.scss";
+
+html {
+    background-color: teal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    flex-direction: column;
+
+}
+
+button {
+    font-size: 2em;
+}
+
+.btn{
+
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+

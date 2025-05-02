@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./scripts/scripts.js" defer></script>  <!--add defer to load the script after the HTML is loaded -->
+</head>
+
+<header>
+    <nav class="Header-Grid__NAV">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <ul id="nav-menu" class="hide">
+            <li class="btn1" onclick="myFunction(event)"><a href="index.html">Home</a></li>
+        <li class="btn1" onclick="myFunction(event)"><a href="secondpage.html">second page</a></li>
+        <li class="btn1" onclick="myFunction(event)"><a href="./thirdpage.html">third page</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    
+     <!-- <p id="changetext">sample text sentence</p>     IDs are easier to use in javascript
+     <button onclick="myFunction()">Click</button> -->
+
+     <p id="changetext">sample text sentence</p>
+     <button id="btn1" class="btn" onclick="myFunction()">Click</button>
+
+
+     <!-- <nav class="navbar">
+        <div class="logo">
+            <a href="/">
+                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png"
+                    alt="gfg_logo">
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <div class="nav-menu hide">
+            <a href="#">Home</a>
+            <a href="./secondpage.html">Career</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav> -->
+</body>
+</html>
