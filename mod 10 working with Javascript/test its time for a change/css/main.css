@@ -1,0 +1,13 @@
+article img {
+  width: 125px;
+  height: 125px;
+  margin: 10px;
+}
+
+#large {
+  width: 600px;
+}
+
+html {
+  background-color: teal;
+}/*# sourceMappingURL=main.css.map */
