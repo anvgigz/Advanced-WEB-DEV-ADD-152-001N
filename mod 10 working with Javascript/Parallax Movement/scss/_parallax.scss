@@ -1,0 +1,108 @@
+
+
+html, body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    perspective: 3px;
+}
+
+.section_1_img {
+ background-image: url("../images/Cisco\ Logo.png");   
+}
+
+.section_1_text {
+    --bg: #c8c8bc;
+}
+
+.heading_1 {
+    --text-color: white;
+}
+
+.section_2_img {
+    background-image: url("../images/CodingLogo.png");
+}
+.section_2_text {
+    --bg: #638a87;
+}
+
+.heading_2 {
+    --text-color: white;
+}
+
+.section_3_img {
+    background-image: url("../images/Comptia\ Logo.png");
+}
+.section_3_text {
+    --bg: #638a87;
+}
+
+.heading_3 {
+    --text-color: white;
+}
+
+.section_3_img {
+    background-image: url("../images/Comptia\ Logo.png");
+}
+.section_3_text {
+    --bg: #384558;
+}
+
+.heading_3 {
+    --text-color: white;
+}
+
+.section_4_img {
+    background-image: url("../images/JavaScriptLogo.png");
+}
+.section_4_text {
+    --bg: #9dbdc4;
+}
+
+.heading_4 {
+    --text-color: rgb(255, 0, 0);
+}
+
+
+section {
+    background-size: cover;
+    color: var(--text-color);
+    background-color: var(--bg, --color-black);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &.image{
+        background-position: center center;
+        transform: translateZ(-1px) scale(1.5);
+        //Force the background image to fill the whole element
+        background-size: cover;
+        //kee the image from overlapping sibling elements
+        z-index: -1;
+        height: 100vh;
+    }
+    &.text{
+        height: 50vh;
+    }
+    &.heading {
+        z-index: -1;
+        transform: translateY(-30vh) translateZ(1px) scale(1.5);
+    }
+}
+
+.footer {
+    position: relative;
+    display: block;
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
